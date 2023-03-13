@@ -21,6 +21,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -173,15 +174,19 @@ footer{
     background-color: var(--cor5);
     color: #fff;
     text-align: center;
-    font-size: 0.8em;
-    padding: 5px;
+    font-size: 1em;
+    padding: 10px;
 }
 footer a{
     color: #fff;
-    font-weight: bold;
+    font-size: 1.1em;
+    /* font-weight: bold; */
     text-decoration: none;
 }
 footer a:hover{
     text-decoration: underline;
     color: var(--cor1);
+}
+footer a::before{
+    content: '\00A0\1F517';
 }
